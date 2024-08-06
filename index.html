@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Movie Tickets</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+    }
+   
+    
+    #heading{
+        text-align: center;
+        justify-content: center;
+        
+    }
+    #seat1{
+        width: 80px;
+        height: 50px;
+        background-color: white;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+
+    }
+    #seat2{
+        width: 80px;
+        height: 50px;
+        background-color: white;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    #seat3{
+        width: 80px;
+        height: 50px;
+        background-color: white;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        
+    }
+    #seat-container{
+        display: flex;
+        gap: 15px;
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+    #seat-container{
+        padding: 25px;
+        background-color: blue;
+        width: 300px;
+        height: 100px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+
+    }
+    #seat-container :hover{
+        cursor: pointer;
+        margin-top: -3px;
+    }
+    #selectingName{
+        display: flex;
+        gap: 42px;
+        margin-left: 40%;
+        margin-top: -6%;
+        color: white;
+    }
+    #moviename{
+        text-align: center;
+        margin-top: 3%;
+    }
+    #moviescreen{
+        width: 350px;
+        height: 80px;
+        background-color: aliceblue;
+        margin-left: 35%;
+    }
+    .seats{
+        width:60px;
+        height:40px;
+        background-color: white;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        
+    }
+     .selectseat{
+        display: flex;
+        gap: 25px;
+        margin-left: 37%;
+     }
+     
+     .selectseat :hover{
+        cursor: pointer;
+        margin-top: -1%;
+     }
+    .summary{
+        text-align: center;
+        font-size: small;
+    }
+    
+
+
+</style>
+<body>
+    <div id="main">
+        <div id="heading">
+            <h3 style="margin-bottom: -3%;">Booking Movie Tickets</h3>
+        </div>
+        
+    <div id="seat-container">
+        <div id="seat1"></div><br>
+        <div id="seat2" style="background-color: chartreuse;"></div><br>
+        <div id="seat3" style="background-color: blueviolet;"></div>
+    </div>
+    <div id="selectingName">
+        <p style="margin-left: -2%;">Available</p> 
+        <p>Selected</p>
+        <p>Occupied</p>
+    </div>
+    <div id="moviename">
+        <label for="movie">Select a Movie</label>
+        <select name="movie" id="movie" class="movie">
+          <option value="100">LEO - ₹100</option>
+          <option value="200">KGF2 - ₹200</option>
+          <option value="300">GOAT - ₹300</option>
+          <option value="400">DARK KNIGHT ₹400</option>
+          
+        </select>
+    </div>
+    <br>
+    <div id="moviescreen">
+        
+    </div>
+    <br><br>
+    <div class="selectseat">
+        
+        <div class="seats"style="background-color: chartreuse;" id="selected"></div>
+        <div class="seats" id="Available"></div>
+        <div class="seats" id= "Occupied" style="background-color:blueviolet;"></div>
+        <div class="seats" id="Available"></div>
+        </div>
+        
+        <br>
+        <div class="summary">
+            <p>You have selected <span id="count">4</span> seats and a total of amount $ <span id="Amount">200</span></p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>`
